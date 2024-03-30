@@ -19,6 +19,7 @@ h1 {
     margin-top: 30vh;
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
+    text-size-adjust: auto;
 }
 
 .scroll-animation {
@@ -49,6 +50,8 @@ h1 {
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+
+    text-size-adjust: auto;
 }
 
 #navbar {
