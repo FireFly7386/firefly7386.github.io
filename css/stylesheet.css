@@ -1,4 +1,5 @@
 body {
+    background-color: black;
     background-image: linear-gradient(to bottom right, black, #202020);
     color: white;
     margin: 0;
