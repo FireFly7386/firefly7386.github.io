@@ -84,17 +84,3 @@ li a{
 li a:hover {
     background-color: #111;
 }
-
-#credits {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#credits button{
-    background-color: #444;
-    border: none;
-    color: white;
-}
-
-#credits button:hover{
-    background-color: #333;
-}

@@ -11,39 +11,22 @@
     <ul id="navbar">
         <li class="current-site"><a class="active" href="https://firefly7386.github.io">Home</a></li>
         <li><a href="https://github.com/FireFly7386">My Github</a></li>
+        <li><a href="#" onclick="showMITLicense()">Credits</a></li>
     </ul>
     <h1>Welcome to the Homepage of FireFly7386</h1>
     <div class="scroll-animation">
         <div class="text">
             <br><br><br><br><br><br><br><br>
-            <p>Hello World! <br> I am a german hobby-developer who is interested in a lot of different stuff like game/software development and cybersecurity.<br>(scroll down for a demo)</p>
+            <p>Hello World! <br> I am a german hobby-developer who is interested in a lot of different stuff like game/software development and cybersecurity.</p>
         </div>
-    </div>
-    <div class="scroll-animation">
-        <div class="text">
-            <br><br><br><br><br>
-            <p id="ip-trick">Fetching info... (if nothing is happening your probably hiding you ip adress. Good!)</p>
-        </div>
-    </div>
-    <div id="credits">
-        Particles.js (the library for the particles in the background): Copyright (c) 2015, Vincent Garreau, MIT License
-        <button onclick="showMITLicense()">Click to show the full License</button>
     </div>
     <script src="js/lib/particles.min.js"></script>
     <script src="js/particle-loader.js"></script>
     <script src="js/scroll-animations.js"></script>
     <script>
-        fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("ip-trick").innerHTML = "Your ip address is: " + data.ip + "<br>See how easy it was to get that ;)?"
-        })
-        .catch(error => {
-            document.getElementById("ip-trick").innerHTML = "Perfect! Your hiding you ip address (or i am too stupid to code)"
-        });
-
         function showMITLicense() {
-            var particlesJSLicense = `The MIT License (MIT)
+            var particlesJSLicense = `
+            The MIT License (MIT)
 
             Copyright (c) 2015, Vincent Garreau
 
@@ -53,7 +36,7 @@
 
             THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`;
 
-            alert(particlesJSLicense);
+            alert("This background of this website was created using the Library ParticlesJS, which you can find the license of blow:\n\n-------------------------------------------------------------" + particlesJSLicense);
         }
     </script>
 </body>
